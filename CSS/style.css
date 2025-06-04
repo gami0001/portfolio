@@ -72,7 +72,8 @@ img {
 #kode1_container {
   position: absolute;
   width: 7%;
-  aspect-ratio: 36/492;
+  aspect-ratio: 36/692;
+  left: 2%;
 }
 
 #kode1_sprite {
@@ -86,7 +87,7 @@ img {
   position: absolute;
   width: 4%;
   aspect-ratio: 19/644;
-  left: 8%;
+  left: 10%;
 }
 
 #kode2_sprite {
@@ -100,7 +101,7 @@ img {
   position: absolute;
   width: 7%;
   aspect-ratio: 36/604;
-  left: 15%;
+  left: 17%;
 }
 
 #kode3_sprite {
@@ -114,7 +115,7 @@ img {
   position: absolute;
   width: 7%;
   aspect-ratio: 23/478;
-  left: 23%;
+  left: 25%;
 }
 
 #kode4_sprite {
@@ -128,7 +129,7 @@ img {
   position: absolute;
   width: 7%;
   aspect-ratio: 36/687;
-  left: 30%;
+  left: 33%;
 }
 
 #kode5_sprite {
@@ -142,13 +143,97 @@ img {
   position: absolute;
   width: 7%;
   aspect-ratio: 36/382;
-  left: 37%;
+  left: 40%;
 }
 
 #kode6_sprite {
   width: 100%;
   height: 100%;
   background-image: url(../IMG/kode6.svg);
+  background-size: cover;
+}
+
+#kode1-1_container {
+  position: absolute;
+  width: 7%;
+  aspect-ratio: 36/492;
+  left: 91%;
+}
+
+#kode1-1_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(../IMG/kode1-1.svg);
+  background-size: cover;
+}
+
+#kode2-1_container {
+  position: absolute;
+  width: 4%;
+  aspect-ratio: 19/644;
+  left: 85%;
+}
+
+#kode2-1_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(../IMG/kode2-1.svg);
+  background-size: cover;
+}
+
+#kode3-1_container {
+  position: absolute;
+  width: 7%;
+  aspect-ratio: 36/604;
+  left: 70%;
+}
+
+#kode3-1_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(../IMG/kode3-1.svg);
+  background-size: cover;
+}
+
+#kode4-1_container {
+  position: absolute;
+  width: 7%;
+  aspect-ratio: 23/478;
+  left: 50%;
+}
+
+#kode4-1_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(../IMG/kode4-1.svg);
+  background-size: cover;
+}
+
+#kode5-1_container {
+  position: absolute;
+  width: 7%;
+  aspect-ratio: 36/687;
+  left: 60%;
+}
+
+#kode5-1_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(../IMG/kode5-1.svg);
+  background-size: cover;
+}
+
+#kode6-1_container {
+  position: absolute;
+  width: 7%;
+  aspect-ratio: 36/382;
+  left: 77%;
+}
+
+#kode6-1_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(../IMG/kode6-1.svg);
   background-size: cover;
 }
 
@@ -166,6 +251,30 @@ img {
   }
   100% {
     transform: translateY(140%);
+  }
+}
+
+.titelAni {
+  animation: slide_kf 0.2s linear 2 forwards, opa_kf 0.3s linear 2 forwards;
+}
+
+@keyframes slide_kf {
+  0% {
+    transform: translateX(-3%);
+  }
+
+  50% {
+    transform: translateX(3%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes opa_kf {
+  50% {
+    opacity: 0;
   }
 }
 
