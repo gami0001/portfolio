@@ -421,3 +421,37 @@ nav {
     font-size: 24px;
   }
 }
+
+@media screen and (min-width: 800px) {
+  .titel {
+    font-size: 6rem;
+  }
+
+  .navn {
+    font-size: 1.2rem;
+    margin-top: 30px;
+  }
+
+  .velkommen {
+    margin-right: 900px;
+    top: 150px;
+    left: 420px;
+  }
+
+  .fald {
+    animation-duration: 10s;
+  }
+
+  @keyframes fald_kf {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(60%);
+    }
+  }
+
+  .menu a:hover {
+    color: #ffffff;
+  }
+}
