@@ -1,0 +1,21 @@
+.burger {
+  top: 30px;
+}
+
+.klikinfo {
+  text-align: center;
+  padding-top: 10px;
+}
+
+@media screen and (min-width: 800px) {
+  .velkommen {
+    margin-right: 900px;
+    top: 150px;
+    left: 420px;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
