@@ -168,6 +168,17 @@ img {
 .ommigsort {
   background-color: black;
   color: white;
+  margin-top: 15px;
+}
+
+.grid_1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.tekstommig {
+  padding-top: 100px;
+  padding-left: 10px;
 }
 
 @media screen and (max-width: 800px) {
