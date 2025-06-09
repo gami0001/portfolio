@@ -46,23 +46,6 @@ img {
   margin-bottom: 10px;
 }
 
-.tema1 {
-  background-color: white;
-  border: 1px solid black;
-  position: relative;
-  top: 60px;
-  margin-left: 30px;
-  margin-right: 30px;
-  padding: 10px;
-  animation-delay: 0.2s;
-}
-
-.tema1 img {
-  width: 40%;
-  height: auto;
-  margin-left: 110px;
-}
-
 .temaerne p {
   font-family: "Michroma", sans-serif;
   font-weight: 400;
@@ -81,11 +64,6 @@ img {
   animation-delay: 0.4s;
 }
 
-.tema2 img {
-  width: 50%;
-  margin-left: 70px;
-}
-
 .tema3 {
   background-color: white;
   border: 1px solid black;
@@ -97,10 +75,6 @@ img {
   animation-delay: 0.6s;
 }
 
-.tema3 img {
-  width: 80%;
-  margin-left: 35px;
-}
 .tema4 {
   background-color: white;
   border: 1px solid black;
@@ -124,16 +98,11 @@ img {
   animation-delay: 1s;
 }
 
-.tema5 img {
-  width: 40%;
-  margin-left: 110px;
-}
-
 .temaerne img {
   transition: transform 0.3s ease;
 }
 .temaerne img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 @keyframes temaAni_kf {
@@ -148,7 +117,6 @@ img {
   }
 }
 
-.tema1,
 .tema2,
 .tema3,
 .tema4,
@@ -171,23 +139,51 @@ img {
   margin-top: 15px;
 }
 
-.ommiggroen {
-  background-color: #356e2f;
-  padding-top: 10px;
+.ommigsort img {
+  margin-left: 22px;
+  width: 90%;
+  animation: slide_kf 0.2s linear 2 forwards, opa_kf 0.3s linear 2 forwards;
 }
 
-.ommiggroen h3 {
+.mig1,
+.mig2 {
+  display: none;
+}
+
+.ommigsort h3 {
   text-align: center;
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-style: normal;
+  padding-top: 20px;
+}
+
+.ommigsort h3:hover {
+  animation: slide_kf 0.2s linear 2 forwards, opa_kf 0.3s linear 2 forwards;
 }
 
 .grid_1_1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.grid_1_1 h2 {
+  text-align: center;
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  padding-top: 10px;
+}
+
+.stikord {
+  text-align: center;
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.7rem;
 }
 
 .tekstommig {
@@ -196,7 +192,26 @@ img {
   font-family: "Michroma", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 0.75rem;
+}
+
+.tekstommig2 {
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 0.7rem;
+}
+
+.tekstommig2 p {
+  margin: 20px;
+}
+
+.tekstommig2 p:last-child {
+  margin-bottom: 0;
+}
+
+.skillsstik:hover {
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 800px) {
@@ -213,12 +228,6 @@ img {
     margin-top: 15px;
   }
 
-  .tema1 img {
-    width: 30%;
-    margin-left: 130px;
-  }
-
-  .tema1,
   .tema2,
   .tema3,
   .tema4,
@@ -228,13 +237,12 @@ img {
     padding: 10px;
   }
 
-  .tema4 img {
+  .tema2 img,
+  .tema3 img,
+  .tema4 img,
+  .tema5 img {
     width: 70%;
     margin-left: 60px;
-  }
-
-  .tema5 img {
-    margin-top: -40px;
   }
 
   .ommigsort {
@@ -242,10 +250,25 @@ img {
   }
 
   .ommigsort img {
+    display: inline;
+    position: absolute;
+    height: auto;
+    animation: slide_kf 0.2s linear 2 forwards, opa_kf 0.3s linear 2 forwards;
+  }
+
+  .ommigimgs {
+    position: relative;
     width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
+  }
+
+  .mig1 {
+    left: 200px;
+    z-index: 1;
+  }
+
+  .mig2 {
+    left: 360px;
+    z-index: 2;
   }
 
   .tekstommig {
