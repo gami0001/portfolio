@@ -104,14 +104,6 @@ img {
   animation-delay: 1s;
 }
 
-.mainport footer {
-  background-color: #2c5d28;
-  color: white;
-  text-align: center;
-  font-size: 0.8rem;
-  padding: 20px;
-}
-
 /*Styling billeder - Portfolio*/
 .temaerne img {
   transition: transform 0.3s ease;
@@ -231,7 +223,7 @@ img {
   margin-bottom: 30px;
 }
 
-.mainommig footer {
+footer {
   background-color: #000874;
   color: white;
   text-align: center;
@@ -373,8 +365,7 @@ img {
   }
 
   /*Styling af diverse - Fælles*/
-  .mainommig footer,
-  .mainport footer {
+  footer {
     font-size: 1rem;
   }
 }

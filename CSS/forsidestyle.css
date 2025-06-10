@@ -89,14 +89,6 @@ img {
 .velkommen h2 {
   margin-bottom: 10px;
 }
-
-.velkommen {
-  transition: transform 0.3s ease;
-}
-.velkommen:hover {
-  transform: scale(1.1);
-}
-
 /* Koder ani */
 
 #kode1_container {
