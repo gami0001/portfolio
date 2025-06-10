@@ -32,6 +32,7 @@ img {
   font-size: 1.2rem;
   font-style: normal;
   margin-top: 70px;
+  margin-bottom: -50px;
 }
 
 .flex {
@@ -52,6 +53,7 @@ img {
   font-style: normal;
   font-size: 0.8rem;
   margin-bottom: 20px;
+  line-height: 1.4rem;
 }
 .tema2 {
   background-color: white;
@@ -179,9 +181,9 @@ img {
 
 .streg {
   height: 2px;
-  background-color: rgb(255, 250, 250); /* farve på stregen */
-  width: 100%; /* fuld bredde */
-  margin: 2rem 0; /* afstand op/ned */
+  background-color: rgb(255, 250, 250);
+  width: 100%;
+  margin: 2rem 0;
 }
 
 .stikord {
@@ -210,15 +212,21 @@ img {
 
 .tekstommig2 p {
   margin: 20px;
+  line-height: 1.5rem;
 }
 
 .tekstommig2 p:last-child {
   margin-bottom: 0;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .skillsstik:hover {
   transform: scale(1.2);
+}
+
+.skillsgrid {
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .mainommig footer {
@@ -296,5 +304,46 @@ img {
 
   .tekstommig {
     font-size: 1.6rem;
+  }
+
+  .streg {
+    margin-top: 250px;
+  }
+
+  .tekstommig2 {
+    margin-left: 250px;
+    margin-right: 250px;
+    font-size: 1rem;
+  }
+
+  .tekstommig2 p:last-child {
+    padding-bottom: 50px;
+  }
+
+  .mainommig footer,
+  .mainport footer {
+    font-size: 1rem;
+  }
+
+  .ommigsort h3 {
+    font-size: 2rem;
+  }
+
+  .skillsgrid {
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  .grid_1_1 h2 {
+    font-size: 1.5rem;
+  }
+
+  .stikord {
+    font-size: 1rem;
+  }
+
+  .tekstommig2 p {
+    line-height: 2rem;
   }
 }
