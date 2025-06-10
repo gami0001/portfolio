@@ -11,6 +11,9 @@ img {
   object-fit: cover;
 }
 
+/*PORTFOLIO*/
+/*Burgermenu - Portfolio*/
+
 .menu a {
   color: #000874;
 }
@@ -23,6 +26,7 @@ img {
   color: #000874;
 }
 
+/*Styling tekst - Portfolio*/
 .titelport {
   color: #000874;
   text-align: center;
@@ -100,6 +104,15 @@ img {
   animation-delay: 1s;
 }
 
+.mainport footer {
+  background-color: #2c5d28;
+  color: white;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 20px;
+}
+
+/*Styling billeder - Portfolio*/
 .temaerne img {
   transition: transform 0.3s ease;
 }
@@ -107,6 +120,7 @@ img {
   transform: scale(1.1);
 }
 
+/*Animationer - Portfolio*/
 @keyframes temaAni_kf {
   0% {
     transform: translateX(-200%);
@@ -126,6 +140,8 @@ img {
   animation: temaAni_kf 1.2s forwards ease-out;
 }
 
+/*OM MIG*/
+/*Styling af tekst - Om mig*/
 .ommigstart {
   color: rgb(0, 0, 0);
   text-align: center;
@@ -141,17 +157,6 @@ img {
   margin-top: 15px;
 }
 
-.ommigsort img {
-  margin-left: 22px;
-  width: 90%;
-  animation: slide_kf 0.2s linear 2 forwards, opa_kf 0.3s linear 2 forwards;
-}
-
-.mig1,
-.mig2 {
-  display: none;
-}
-
 .ommigsort h3 {
   text-align: center;
   font-family: "Orbitron", sans-serif;
@@ -159,6 +164,7 @@ img {
   font-weight: 600;
   font-size: 1.5rem;
   font-style: normal;
+  margin-top: 30px;
 }
 
 .ommigsort h3:hover {
@@ -177,13 +183,13 @@ img {
   font-style: normal;
   font-size: 1rem;
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .streg {
   height: 2px;
   background-color: rgb(255, 250, 250);
   width: 100%;
-  margin: 2rem 0;
 }
 
 .stikord {
@@ -195,7 +201,7 @@ img {
 }
 
 .tekstommig {
-  padding-top: 110px;
+  padding-top: 70px;
   padding-left: 20px;
   font-family: "Michroma", sans-serif;
   font-weight: 400;
@@ -207,7 +213,7 @@ img {
   font-family: "Michroma", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 
 .tekstommig2 p {
@@ -218,10 +224,6 @@ img {
 .tekstommig2 p:last-child {
   margin-bottom: 0;
   padding-bottom: 20px;
-}
-
-.skillsstik:hover {
-  transform: scale(1.2);
 }
 
 .skillsgrid {
@@ -237,12 +239,20 @@ img {
   padding: 20px;
 }
 
-.mainport footer {
-  background-color: #2c5d28;
-  color: white;
-  text-align: center;
-  font-size: 0.8rem;
-  padding: 20px;
+.skillsstik:hover {
+  transform: scale(1.2);
+}
+
+/*Styling af img - Om mig*/
+.ommigsort img {
+  margin-left: 22px;
+  width: 90%;
+  animation: slide_kf 0.2s linear 2 forwards, opa_kf 0.3s linear 2 forwards;
+}
+
+.mig1,
+.mig2 {
+  display: none;
 }
 
 @media screen and (max-width: 800px) {
@@ -252,12 +262,8 @@ img {
 }
 
 @media screen and (min-width: 800px) {
-  .ommigstart {
-    background-color: #000000;
-    color: white;
-    font-size: 2rem;
-    margin-top: 15px;
-  }
+  /*PORTFOLIO DESKTOP*/
+  /*Styling af tekst - Portfolio desktop*/
 
   .tema2,
   .tema3,
@@ -268,61 +274,43 @@ img {
     padding: 10px;
   }
 
+  /*Styling af img - Portfolio desktop*/
   .tema2 img,
   .tema3 img,
-  .tema4 img,
-  .tema5 img {
+  .tema4 img {
     width: 70%;
     margin-left: 60px;
   }
 
-  .ommigsort {
-    margin-top: -15px;
+  .tema5 img {
+    width: 70%;
+    margin-left: 70px;
   }
 
-  .ommigsort img {
-    display: inline;
-    position: absolute;
-    height: auto;
-    animation: slide_kf 0.2s linear 2 forwards, opa_kf 0.3s linear 2 forwards;
+  /*OM MIG DESKTOP*/
+  /*Styling af tekst - Om mig desktop*/
+  .ommigstart {
+    background-color: #000000;
+    color: white;
+    font-size: 2rem;
+    margin-top: 20px;
   }
 
-  .ommigimgs {
-    position: relative;
-    width: 50%;
-  }
-
-  .mig1 {
-    left: 200px;
-    z-index: 1;
-  }
-
-  .mig2 {
-    left: 360px;
-    z-index: 2;
+  .ommigstart h1 {
+    padding-top: 20px;
   }
 
   .tekstommig {
     font-size: 1.6rem;
-  }
-
-  .streg {
-    margin-top: 250px;
+    margin-top: 90px;
   }
 
   .tekstommig2 {
     margin-left: 250px;
     margin-right: 250px;
     font-size: 1rem;
-  }
-
-  .tekstommig2 p:last-child {
-    padding-bottom: 50px;
-  }
-
-  .mainommig footer,
-  .mainport footer {
-    font-size: 1rem;
+    border: solid;
+    border-color: #2c5d28;
   }
 
   .ommigsort h3 {
@@ -345,5 +333,48 @@ img {
 
   .tekstommig2 p {
     line-height: 2rem;
+  }
+
+  /*Styling af img - Om mig desktop*/
+
+  .ommigsort img {
+    display: inline;
+    position: absolute;
+    height: auto;
+    animation: slide_kf 0.2s linear 2 forwards, opa_kf 0.3s linear 2 forwards;
+  }
+
+  .ommigimgs {
+    position: relative;
+    width: 50%;
+  }
+
+  .mig1 {
+    left: 200px;
+    z-index: 1;
+  }
+
+  .mig2 {
+    left: 374px;
+    z-index: 2;
+  }
+
+  /*Styling af diverse - Portfolio desktop*/
+  .ommigsort {
+    margin-top: -15px;
+  }
+
+  .streg {
+    margin-top: 156px;
+  }
+
+  .mainommig footer {
+    margin-top: 30px;
+  }
+
+  /*Styling af diverse - Fælles*/
+  .mainommig footer,
+  .mainport footer {
+    font-size: 1rem;
   }
 }
