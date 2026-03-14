@@ -1,8 +1,20 @@
+.anton-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.figtree {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
 body {
   display: grid;
   grid-template-columns:
-    [full-start] 1fr [content-start] minmax(0, 45ch)
-    [content-mid] minmax(0, 45ch)
+    [full-start] 1fr [content-start] minmax(0, 55ch)
+    [content-mid] minmax(0, 55ch)
     [content-end]
     1fr [full-end];
 }

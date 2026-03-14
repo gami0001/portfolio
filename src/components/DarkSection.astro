@@ -1,0 +1,82 @@
+---
+import { Image } from "astro:assets";
+import SectionMe from "../assets/images/gabrielle.webp";
+import NewSection from "./NewSection.astro";
+---
+
+<section class="dark_section">
+  <NewSection text="About me" color="white" side="left" />
+  <div class="grid_1-1">
+    <div>
+      <Image src={SectionMe} alt="Picture of me" />
+    </div>
+    <div>
+      <div>
+        <h1>Hello, i'm Gabrielle!</h1>
+        <p>
+          I am currently studying Multimedia Design at Erhvervsakademi København, specializing in <b>Front-End Development</b>. I am particularly passionate about front-end as it allows me to combine creativity with programming to create functional and engaging digital experiences. Through my studies, I work with HTML, CSS, JavaScript, and modern development workflows to transform design concepts into responsive and user-friendly websites. I enjoy the process of turning visual ideas into interactive solutions and continuously developing my technical skills through case projects and hands-on development work.
+          <br />
+          <br />
+          Alongside my digital practice, creativity plays an important role in how I approach problem-solving. My background in sewing and running an independent tailoring service has strengthened my eye for detail, structure, and aesthetics - skills I actively bring into my work as a front-end developer. Working with clothing customization and upcycled materials has also shaped my sustainable and thoughtful approach to design, both physically and digitally.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .dark_section {
+    background: black;
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: full;
+    color: white;
+    padding-block: 4rem;
+  }
+
+  .dark_section > * {
+    grid-column: content;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    container-type: inline-size; /* enable container queries */
+    container-name: grid1; /* kan navngives vilkårligt */
+    width: 100%;
+  }
+
+  .grid_1-1 p {
+    font-family: "Figtree", sans-serif;
+  }
+
+  .grid_1-1 > div:first-child img {
+    width: clamp(150px, 70%, 400px);
+    height: auto;
+    display: block;
+  }
+
+  h1 {
+    font-family: "Anton", sans-serif;
+    font-size: 3rem;
+  }
+
+  @media (max-width: 1000px) {
+    .dark_section > * {
+      grid-column: full;
+      padding-inline: 2rem;
+    }
+
+    .grid_1-1 {
+      display: block;
+    }
+
+    .grid_1-1 > div:first-child img {
+      margin: 0 auto;
+    }
+
+    .grid_1-1 > div:last-child {
+      margin-top: 1.5rem;
+    }
+  }
+</style>
