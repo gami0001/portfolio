@@ -1,0 +1,22 @@
+---
+import { Image } from "astro:assets";
+import IndexMe from "@assets/images/index_img.png";
+---
+
+<section class="hero">
+  <Image src={IndexMe} alt="Picture of me" />
+  <div class="top-left typing">PORTFOLIO</div>
+  <div class="top-left_two">A technically creative student passionate about <br />coding, web design, and graphic work.</div>
+  <div class="bottom-right">Gabrielle Cernias Mikkelsen</div>
+  <div class="top-right">Multimediadesigner</div>
+</section>
+
+<style>
+  @layer components {
+    .hero {
+      display: grid;
+      grid-template-columns: subgrid;
+      grid-column: full;
+    }
+  }
+</style>
